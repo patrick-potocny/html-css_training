@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;1,400&display=swap');
+
+
+:root {
+    --text-color: #ffffff
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+
+    background-image: url('images/cybertruck_small.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo img{
+    width: 120px;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    padding: 0 30px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+
+
+li, a {
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(210, 210, 210, 0.4);
+    border-radius: 15px;
+}
+
+.logo, .account {
+    width: 33vw;
+}
+
+.account ul {
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 1400px) {
+    nav li:not(.menu){
+        display: none;
+    }
+    .menu {
+      display: flex;
+    }
+  }
+
+
+.cybertruck {
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.specs {
+    color: var(--text-color);
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    white-space: nowrap;
+}
+
+.spec p {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.spec h3 {
+    font-size: 2rem;
+}
+
+.order-btn{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-btn button{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 4px solid var(--text-color);
+    border-radius: 100px;
+    padding: 10px 70px;
+
+}
+
+.order-btn button:hover {
+    background-color: var(--text-color);
+    color: black;
+    cursor: pointer;
+}
