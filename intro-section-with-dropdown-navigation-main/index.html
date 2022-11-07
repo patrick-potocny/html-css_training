@@ -16,18 +16,102 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    Features Company Careers About Login Register Make remote work Get your team
-    in sync, no matter your location. Streamline processes, create team rituals,
-    and watch productivity soar. Learn more
+    <nav class="header flex">
+      <div class="header__left flex">
+        <a href="#"
+          ><img class="header__logo" src="./images/logo.svg" alt="snap logo"
+        /></a>
+        <ul role="list" class="header__nav flex">
+          <li class="header__dropdown header__nav-link">
+            <a href="#">
+              Features
+              <div class="dropdown__arrow"></div>
+              <div class="dropdown feature__dropdown">
+                <ul class="dropdown__list" role="list">
+                  <li class="dropdown__list__item feature">
+                    <img src="./images/icon-todo.svg" alt="">
+                    <p>Todo List</p>
+                  </li>
+                  <li class="dropdown__list__item feature">
+                    <img src="./images/icon-calendar.svg" alt="">
+                    <p>Calendar</p>
+                  </li>
+                  <li class="dropdown__list__item feature">
+                    <img src="./images/icon-reminders.svg" alt="">
+                    <p>Reminders</p>
+                  </li>
+                  <li class="dropdown__list__item feature">
+                    <img src="./images/icon-planning.svg" alt="">
+                    <p>Planning</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="header__dropdown header__nav-link">
+            <a href="#">
+              Company
+              <div class="dropdown__arrow"></div>
+              <div class="dropdown">
+                <ul class="dropdown__list" role="list">
+                  <li class="dropdown__list__item">
+                    <p>History</p>
+                  </li>
+                  <li class="dropdown__list__item">
+                    <p>Our Team</p>
+                  </li>
+                  <li class="dropdown__list__item">
+                    <p>Blog</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="header__nav-link"><a href="#">Careers</a></li>
+          <li class="header__nav-link"><a href="#">About</a></li>
+        </ul>
+      </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Patrik Potocny</a>.
-    </div>
+      <div class="header__right">
+        <ul role="list" class="header__nav flex">
+          <li class="header__nav-link"><a href="#">Login</a></li>
+          <li class="header__nav-link header__nav-link--outlined">
+            <a href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main flex">
+      <div class="main__left flex">
+        <div class="main__left__title">
+          <h1>Make</h1>
+          <h1>remote work</h1>
+        </div>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="cta">Learn more</button>
+        <div class="clients-logos flex">
+          <img class="client" src="./images/client-databiz.svg" alt="client" />
+          <img
+            class="client"
+            src="./images/client-audiophile.svg"
+            alt="client"
+          />
+          <img class="client" src="./images/client-meet.svg" alt="client" />
+          <img class="client" src="./images/client-maker.svg" alt="client" />
+        </div>
+      </div>
+
+      <div class="main__right">
+        <img src="./images/image-hero-desktop.png" alt="" />
+      </div>
+    </main>
   </body>
 </html>

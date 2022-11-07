@@ -1,0 +1,76 @@
+// HEADER
+.header {
+  justify-content: space-between;
+  align-items: center;
+
+  &__nav {
+    gap: 2.3rem;
+    align-items: center;
+  }
+
+  
+}
+
+.dropdown__arrow {
+  display: inline-block;
+}
+
+
+// MAIN 
+.main {
+  margin: 4rem auto;
+  width: min(75rem, 80%);
+
+  &__left {
+    max-width: 40rem;
+    flex-direction: column;
+    gap: 3rem; 
+  }
+
+  &__right {
+    max-width: 30rem;
+  }
+}
+
+.cta {
+  width: 30%;
+  padding: 1rem;
+}
+
+.clients-logos {
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 3rem;
+  img {
+    object-fit: contain;
+  }
+}
+
+// DROPDOWN 
+.header__dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  padding: 2rem;
+  top: 2rem;
+  z-index: 2;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__dropdown {
+  width: 10rem;
+  left: -5rem;
+}
+

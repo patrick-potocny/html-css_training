@@ -1,0 +1,84 @@
+@import "./base";
+
+// HEADER
+.header {
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+
+  &__logo {
+    margin-right: 4rem;
+  }
+
+  &__nav-link {
+    font-size: $fs-header;
+    color: $clr-accent;
+
+    &:hover,
+    &:focus {
+      color: $clr-primary;
+      cursor: pointer;
+
+      .dropdown__arrow {
+        background-image: url(../images/icon-arrow-up.svg);
+        filter: brightness(0) saturate(100%);
+      }
+    }
+
+    &--outlined {
+      padding: 0.7rem 1.2rem;
+      border: 2px solid $clr-accent;
+      border-radius: 1rem;
+    }
+  }
+} 
+
+.dropdown__arrow {
+  width: 10px;
+  height: 6px;
+  background-image: url(../images/icon-arrow-down.svg);
+  transform: translateY(-1px);
+}
+
+// MAIN 
+
+.main {
+  justify-content: space-between;
+
+  &__left {
+    h1 {
+      font-size: 5rem;
+      font-weight: $fw-bold;
+      line-height: 1;
+    }
+
+    p {
+      color: $clr-accent;
+      width: 70%;
+    }
+
+    &__title {
+      margin-top: 5rem;
+    }
+  }
+}
+
+.cta {
+  background: $clr-primary;
+  color: $clr-secondary;
+  border-radius: 1rem;
+  border: 2px solid $clr-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $clr-secondary;
+    color: $clr-primary;
+    cursor: pointer;
+  }
+}
+
+// DROPDOWN
+.dropdown {
+  background-color: $clr-secondary;
+  border-radius: 1rem;
+  font-size: 13px;
+}

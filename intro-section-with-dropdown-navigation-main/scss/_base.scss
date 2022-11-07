@@ -1,11 +1,15 @@
 // VARIABLES
-$clr-primary: hsl(0, 0%, 8%);
+$clr-primary: #141414;
 $clr-secondary: hsl(0, 0%, 98%);
 $clr-accent: hsl(0, 0%, 41%);
 
 $ff-main: 'Epilogue', sans-serif;
 $fw-normal: 500;
 $fw-bold: 700;
+$fs-header: 15px;
+
+$breakpoint-mobile: 950px;
+
 
 // GENEREAL STYLES
 body{ 
@@ -75,4 +79,16 @@ picture {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Remove styling from links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+// Util classes 
+.flex {
+  display: flex;
 }
