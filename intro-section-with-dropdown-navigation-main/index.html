@@ -22,67 +22,67 @@
   <body>
     <nav class="header flex">
       <div class="header__left flex">
-        <a href="#"
-          ><img class="header__logo" src="./images/logo.svg" alt="snap logo"
+        <a href="#" class="header__logo"
+          ><img  src="./images/logo.svg" alt="snap logo"
         /></a>
         <ul role="list" class="header__nav flex">
           <li class="header__dropdown header__nav-link">
-            <a href="#">
-              Features
-              <div class="dropdown__arrow"></div>
-              <div class="dropdown feature__dropdown">
-                <ul class="dropdown__list" role="list">
-                  <li class="dropdown__list__item feature">
-                    <img src="./images/icon-todo.svg" alt="">
-                    <p>Todo List</p>
-                  </li>
-                  <li class="dropdown__list__item feature">
-                    <img src="./images/icon-calendar.svg" alt="">
-                    <p>Calendar</p>
-                  </li>
-                  <li class="dropdown__list__item feature">
-                    <img src="./images/icon-reminders.svg" alt="">
-                    <p>Reminders</p>
-                  </li>
-                  <li class="dropdown__list__item feature">
-                    <img src="./images/icon-planning.svg" alt="">
-                    <p>Planning</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
+            <a href="#" class="dropdown__link">Features</a>
+            <div class="dropdown__arrow"></div>
+            <div class="dropdown__gap"></div>
+            <div class="dropdown feature__dropdown">
+              <ul class="dropdown__list" role="list">
+                <li class="feature">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <a href="#">Todo List</a>
+                </li>
+                <li class="feature">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <a href="#">Calendar</a>
+                </li>
+                <li class="feature">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <a href="#">Reminders</a>
+                </li>
+                <li class="feature">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="header__dropdown header__nav-link">
-            <a href="#">
-              Company
-              <div class="dropdown__arrow"></div>
-              <div class="dropdown">
-                <ul class="dropdown__list" role="list">
-                  <li class="dropdown__list__item">
-                    <p>History</p>
-                  </li>
-                  <li class="dropdown__list__item">
-                    <p>Our Team</p>
-                  </li>
-                  <li class="dropdown__list__item">
-                    <p>Blog</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
+            <a href="#" class="dropdown__link">Company</a>
+            <div class="dropdown__arrow"></div>
+            <div class="dropdown__gap"></div>
+            <div class="dropdown company__dropdown">
+              <ul class="dropdown__list" role="list">
+                <li>
+                  <a class="dropdown__list__link" href="#">History</a>
+                </li>
+                <li>
+                  <a class="dropdown__list__link" href="#">Our Team</a>
+                </li>
+                <li>
+                  <a class="dropdown__list__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="header__nav-link"><a href="#">Careers</a></li>
-          <li class="header__nav-link"><a href="#">About</a></li>
+          <li class="header__nav-link"><a class="nav-link" href="#">Careers</a></li>
+          <li class="header__nav-link"><a class="nav-link" href="#">About</a></li>
         </ul>
       </div>
 
       <div class="header__right">
         <ul role="list" class="header__nav flex">
-          <li class="header__nav-link"><a href="#">Login</a></li>
+          <li class="header__nav-link"><a class="nav-link" href="#">Login</a></li>
           <li class="header__nav-link header__nav-link--outlined">
-            <a href="#">Register</a>
+            <a href="#" class="nav-link">Register</a>
           </li>
         </ul>
+
+        <button id="menu"><img src="./images/icon-menu.svg" alt="menu" class="hamburger"></button>
       </div>
     </nav>
 
@@ -99,11 +99,7 @@
         <button class="cta">Learn more</button>
         <div class="clients-logos flex">
           <img class="client" src="./images/client-databiz.svg" alt="client" />
-          <img
-            class="client"
-            src="./images/client-audiophile.svg"
-            alt="client"
-          />
+          <img class="client" src="./images/client-audiophile.svg" alt="client"/>
           <img class="client" src="./images/client-meet.svg" alt="client" />
           <img class="client" src="./images/client-maker.svg" alt="client" />
         </div>

@@ -1,18 +1,21 @@
 // VARIABLES
-$clr-primary: #141414;
+$clr-primary: hsl(0, 0%, 8%);
 $clr-secondary: hsl(0, 0%, 98%);
 $clr-accent: hsl(0, 0%, 41%);
+$clr-dropdown: hsl(0, 0%, 100%);
 
 $ff-main: 'Epilogue', sans-serif;
 $fw-normal: 500;
 $fw-bold: 700;
 $fs-header: 15px;
 
-$breakpoint-mobile: 950px;
+$breakpoint-mobile: 1100px;
+$breakpoint-header: 600px;
 
 
 // GENEREAL STYLES
 body{ 
+  background-color: $clr-secondary;
   font-family: $ff-main;
   font-weight: $fw-normal;
   font-size: 18px;
@@ -91,4 +94,9 @@ a {
 // Util classes 
 .flex {
   display: flex;
+}
+
+// MIXNIS
+@mixin hover {
+  
 }
